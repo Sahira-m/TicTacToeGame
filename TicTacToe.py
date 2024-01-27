@@ -48,18 +48,19 @@ test_Board = ["#", "X", "O", "X", "O", "X", "O", "X", "O", "X"]
 # display_board(test_Board)
 
 
-def player_input():
-    marker = ""
-    while marker != "X" and marker != "O":
-        marker = input("player1 choose X or  O      ")
-    if marker == "X":
-        return ("X", "O")
-    else:
-        return ("O", "X")
+#def player_input():
+ #   marker = ""
+ #   while marker != "X" and marker != "O":
+  #      marker = input("player1 choose X or  O      ")
+   # if marker == "X":
+    #    return ("X", "O")
+    #else:
+     #   return ("O", "X")
 
 
-# player1, player2 = player_input()
-# print("player1 sympol is", player1, "player2 sympol is ", player2)
+player1="X"
+player2 ="Y"
+print("player1 sympol is", player1, "player2 sympol is ", player2)
 
 
 def place_marker(board, marker, position):
@@ -92,7 +93,7 @@ while True:
     # play the game
     # set everything up board,whose first,choose markers
     the_board = [" "] * 10
-    player1, player2 = player_input()
+    #player1, player2 = player_input()
     print("player1 sympol is", player1, "player2 sympol is ", player2)
     turn = choose_first()
     print(turn + "  Will go first")
